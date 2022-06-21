@@ -4,4 +4,7 @@
     <string name="team_a">Team A</string>
     <string name="team_b">Team B</string>
     <string name="reset">Reset</string>
+    <string name="_0">0</string>
+    <string name="_1">+ 1</string>
+    <string name="min1">-1</string>
 </resources>

@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/mobile programming/course/courseMvvm/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/mobile programming/course/courseMvvm/app/src/main/res/drawable/bg_btn_reset.xml" value="0.1195" />
+        <entry key="..\:/mobile programming/course/courseMvvm/app/src/main/res/drawable/bg_btn_team_a.xml" value="0.1195" />
+        <entry key="..\:/mobile programming/course/courseMvvm/app/src/main/res/drawable/bg_btn_team_b.xml" value="0.1195" />
+        <entry key="..\:/mobile programming/course/courseMvvm/app/src/main/res/layout/activity_main.xml" value="0.2" />
       </map>
     </option>
   </component>

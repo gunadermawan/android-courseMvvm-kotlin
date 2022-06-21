@@ -91,4 +91,69 @@
             tools:text="0" />
     </androidx.cardview.widget.CardView>
 
+    <Button
+        android:id="@+id/btn_plus_score_team_a"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bg_btn_team_a"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cv_team_A"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cv_team_A"
+        app:layout_constraintTop_toBottomOf="@+id/cv_team_A"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="1" />
+
+    <Button
+        android:id="@+id/btn_minus_score_team_a"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_btn_team_a"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_plus_score_team_a"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_plus_score_team_a"
+        app:layout_constraintTop_toBottomOf="@+id/btn_plus_score_team_a"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="-1" />
+
+    <Button
+        android:id="@+id/btn_plus_score_team_b"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_btn_team_b"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_plus_score_team_a"
+        app:layout_constraintEnd_toEndOf="@+id/cv_team_B"
+        app:layout_constraintStart_toStartOf="@+id/cv_team_B"
+        app:layout_constraintTop_toTopOf="@+id/btn_plus_score_team_a"
+        tools:text="1" />
+
+    <Button
+        android:id="@+id/btn_minus_score_team_b"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_btn_team_b"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_minus_score_team_a"
+        app:layout_constraintEnd_toEndOf="@+id/btn_plus_score_team_b"
+        app:layout_constraintStart_toStartOf="@+id/btn_plus_score_team_b"
+        app:layout_constraintTop_toTopOf="@+id/btn_minus_score_team_a"
+        tools:text="-1" />
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_btn_reset"
+        android:text="@string/reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_minus_score_team_b"
+        app:layout_constraintStart_toStartOf="@+id/btn_minus_score_team_a"
+        app:layout_constraintTop_toBottomOf="@+id/btn_minus_score_team_a" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

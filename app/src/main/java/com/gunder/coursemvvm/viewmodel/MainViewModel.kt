@@ -45,7 +45,7 @@ class MainViewModel : ViewModel() {
         scoreA.value = result
     }
 
-    private fun getScoreA(): LiveData<Int> {
+    fun getScoreA(): LiveData<Int> {
         if (scoreA.value == null) {
             scoreA.value = 0
         }

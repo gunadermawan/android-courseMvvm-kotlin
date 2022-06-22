@@ -24,47 +24,20 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View?) {
         when (v?.id) {
             R.id.btn_plus_score_team_a -> {
-                addScoreA()
+
             }
             R.id.btn_minus_score_team_a -> {
-                minScoreA()
+
             }
             R.id.btn_plus_score_team_b -> {
-                addScoreB()
+
             }
             R.id.btn_minus_score_team_b -> {
-                minScoreB()
+
             }
             R.id.btn_reset -> {
-                resetScore()
+                
             }
         }
-    }
-
-    private fun resetScore() {
-        scoreA = 0
-        scoreB = 0
-        activityMainBinding.tvCardTeamA.text = scoreA.toString()
-        activityMainBinding.tvCardTeamB.text = scoreB.toString()
-    }
-
-    private fun minScoreB() {
-        scoreB -= 1
-        activityMainBinding.tvCardTeamB.text = scoreB.toString()
-    }
-
-    private fun addScoreB() {
-        scoreB += 1
-        activityMainBinding.tvCardTeamB.text = scoreB.toString()
-    }
-
-    private fun minScoreA() {
-        scoreA -= 1
-        activityMainBinding.tvCardTeamA.text = scoreA.toString()
-    }
-
-    private fun addScoreA() {
-        scoreA += 1
-        activityMainBinding.tvCardTeamA.text = scoreA.toString()
     }
 }

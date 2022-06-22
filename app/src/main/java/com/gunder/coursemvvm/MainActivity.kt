@@ -3,15 +3,12 @@ package com.gunder.coursemvvm
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.gunder.coursemvvm.databinding.ActivityMainBinding
 import com.gunder.coursemvvm.viewmodel.MainViewModel
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var activityMainBinding: ActivityMainBinding
-    private var scoreA = 0
-    private var scoreB = 0
     private lateinit var mainViewModel: MainViewModel
     override fun onCreate(savedInstanceState: Bundle?) {
         activityMainBinding = ActivityMainBinding.inflate(layoutInflater)
@@ -29,16 +26,18 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun initView() {
-        mainViewModel.getScoreA().observe(this, Observer {
+//        used to observe value in variable
+        mainViewModel.getScoreA().observe(this) {
+//            when value was changed, it will be implenets to textView
             if (it != null) {
                 activityMainBinding.tvCardTeamA.text = it.toString()
             }
-        })
-        mainViewModel.getScoreB().observe(this, Observer {
+        }
+        mainViewModel.getScoreB().observe(this) {
             if (it != null) {
                 activityMainBinding.tvCardTeamB.text = it.toString()
             }
-        })
+        }
     }
 
     override fun onClick(v: View?) {

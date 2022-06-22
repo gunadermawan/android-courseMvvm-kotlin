@@ -158,6 +158,7 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/bg_btn_reset"
         android:text="@string/reset"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/btn_minus_score_team_b"
         app:layout_constraintStart_toStartOf="@+id/btn_minus_score_team_a"
